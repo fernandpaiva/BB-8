@@ -20,6 +20,9 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -36,6 +39,7 @@
             FontSize="40" />
         <Label Grid.Row="1" Content="Descrição :" />
         <TextBox
+            x:Name="txtDescricao"
             Grid.Row="1"
             Grid.Column="1"
             Height="22"
@@ -45,6 +49,7 @@
             Grid.Column="0"
             Content="Tratativa :" />
         <TextBox
+            x:Name="txtTratativa"
             Grid.Row="2"
             Grid.Column="1"
             Height="22"
@@ -54,18 +59,21 @@
             Grid.Column="0"
             Content="Complexidade de desenvolvimento :" />
         <RadioButton
+            x:Name="rdbComplexidade1"
             Grid.Row="4"
             Grid.Column="1"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Content="1 (BAIXO)" />
         <RadioButton
+            x:Name="rdbComplexidade2"
             Grid.Row="4"
             Grid.Column="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Content="2 (MÉDIO)" />
         <RadioButton
+            x:Name="rdbComplexidade3"
             Grid.Row="4"
             Grid.Column="1"
             HorizontalAlignment="Right"
@@ -76,12 +84,14 @@
             Grid.Column="0"
             Content="Nível impacto em outras telas :" />
         <RadioButton
+            x:Name="rdbImpacto0"
             Grid.Row="5"
             Grid.Column="1"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Content="0 (NÃO AFETA)" />
         <RadioButton
+            x:Name="rdbImpacto1"
             Grid.Row="5"
             Grid.Column="1"
             HorizontalAlignment="Center"
@@ -92,6 +102,7 @@
             Grid.Column="0"
             Content="Comportamento esperado :" />
         <TextBox
+            x:Name="txtComportamento"
             Grid.Row="6"
             Grid.Column="1"
             Height="22"
@@ -101,11 +112,13 @@
             Grid.Column="0"
             Content="Ambiente de teste:" />
         <RadioButton
+            x:Name="rdbAmbiente1"
             Grid.Row="7"
             Grid.Column="1"
             VerticalAlignment="Center"
             Content="1(SIM)" />
         <RadioButton
+            x:Name="rdbAmbiente2"
             Grid.Row="7"
             Grid.Column="1"
             HorizontalAlignment="Center"
@@ -116,10 +129,27 @@
             Grid.Column="0"
             Content="Exemplo de cenário de testes: " />
         <TextBox
-            Grid.Row="9"
+            x:Name="txtAmbiente"
+            Grid.Row="8"
             Grid.Column="1"
             Height="22"
             Text="(mostrar ambiente de teste para Qa)" />
+        <Image Source="C:\Users\ferna\OneDrive\Imagens\bb-8-icon-7-removebg-preview.png"
+               Width="100"
+               Grid.Column="2"
+               Grid.Row="9"/>
+        <Label
+            x:Name="txtGerado"
+            Grid.Row="10"
+            Grid.Column="2"
+            Width="100"
+            Height="30" />
+        <Button
+            Grid.Row="11"
+            Grid.Column="2"
+            Width="100"
+            Height="40"
+            Content="Gerar" />
 
 
 
